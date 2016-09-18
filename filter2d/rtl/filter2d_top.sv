@@ -1,7 +1,7 @@
 //(c) Aleksandr Kotelnikov, al.kotelnikov@gmail.com
 `timescale 1ns/1ps
 
-module filter3x3_top import filter3x3_pkg::*; (
+module filter2d_top import filter2d_pkg::*; (
    input    wire                    clock,
    input    wire                    rst_n,
    input    wire                    frame_start,
@@ -18,7 +18,7 @@ module filter3x3_top import filter3x3_pkg::*; (
    .WIN_SIZE   (WIN_SIZE),
    .KERNEL     (KERNEL),
    .FOUT_SHIFT (FOUT_SHIFT)
-) filter3x3 (
+) filter2d_inst (
    .clock,
    .rst_n,
    .frame_start,
@@ -27,4 +27,4 @@ module filter3x3_top import filter3x3_pkg::*; (
    .dout_vld,
    .dout
 );
-endmodule: filter3x3_top
+endmodule: filter2d_top

@@ -1,5 +1,5 @@
 //(c) Aleksandr Kotelnikov, al.kotelnikov@gmail.com
-package filter3x3_pkg;
+package filter2d_pkg;
    parameter FRAME_H          = 1080;
    parameter FRAME_W          = 1920;
    parameter DIN_WIDTH        = 8;
@@ -12,4 +12,4 @@ package filter3x3_pkg;
       8'd29,   8'd123,  8'd21,
       8'd5,    8'd35,   8'd1
    };
-endpackage: filter3x3_pkg
+endpackage: filter2d_pkg
